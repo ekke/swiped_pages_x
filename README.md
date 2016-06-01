@@ -1,5 +1,3 @@
-# WORK IN PROGRESS - WAIT FOR TWEET / BLOG BEFORE CLONING 
-
 # swiped_pages_x
 Sample APP - Qt 5.7+ - Android iOS
 
@@ -48,7 +46,7 @@ Images downloaded from https://design.google.com/icons/ - then renamed to match 
 ## Screenshots
 This sample app uses Material Design with UI Controls provided by Qt 5.7+ and was designed and tested on Android (BlackBerry PRIV Android 6.0.1) and iOS (iPhone 6s iOS 9.3).
 
-A detailed description you'll find at my blog: http://j.mp/qt-stacked_pages-x
+A detailed description you'll find at my blog: http://bit.ly/qt-swiped_pages-x
 
 ### Screenshot Android Page 1
 TBD
