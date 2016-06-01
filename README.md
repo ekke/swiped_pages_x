@@ -51,8 +51,11 @@ This sample app uses Material Design with UI Controls provided by Qt 5.7+ and wa
 
 A detailed description you'll find at my blog: http://bit.ly/qt-swiped-pages-x
 
-### Screenshot Android Page 1
-TBD
+### Screenshot Android
+![alt tag](https://appbus.files.wordpress.com/2016/06/android_wizard_2.png  "Screenshot Android Page 2 of 5")
+
+### Screenshot iOS
+![alt tag](https://appbus.files.wordpress.com/2016/06/ios_wizard_5.png "Screenshot iOS Page 5 of 5")
 
 more screenshots here:
 http://bit.ly/qt-swiped-pages-x
