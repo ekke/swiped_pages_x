@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>translations/swiped_pages_x_de.qm</file>
+        <file>translations/swiped_pages_x_en.qm</file>
+        <file>translations/swiped_pages_x.qm</file>
+    </qresource>
+</RCC>
