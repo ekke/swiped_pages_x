@@ -134,13 +134,20 @@ ApplicationWindow {
         }
 
         // support of BACK key
+        property bool firstPageInfoRead: false
         Keys.onBackPressed: {
-            event.accepted = navPane.currentIndex > 0
+            event.accepted = navPane.currentIndex > 0 || !firstPageInfoRead
             if(navPane.currentIndex > 0) {
                 onePageBack()
                 return
             }
-            // perhaps ask user if app should really quit
+            // first time we reached first page
+            // user gets Popupo Info
+            // hitting again BACK will close the app
+            if(!firstPageInfoRead) {
+                popupInfo.open()
+                firstPageInfoRead = true
+            }
             // We don't have to manually cleanup loaded Page 1+2
             // While shutting down the app loaded Pages will be deconstructed
             // and cleanup called
@@ -203,6 +210,7 @@ ApplicationWindow {
 
         function onePageBack() {
             if(navPane.currentIndex == 0) {
+                popupInfo.open()
                 return
             }
             currentIndex = currentIndex - 1
@@ -210,6 +218,7 @@ ApplicationWindow {
 
         function onePageForward() {
             if(navPane.currentIndex == 4) {
+                popupInfo.open()
                 return
             }
             currentIndex = currentIndex + 1
@@ -233,6 +242,8 @@ ApplicationWindow {
             active: navPane.currentIndex == 0 || navPane.currentIndex == 1
             source: "pages/PageOne.qml"
             onLoaded: item.init()
+            // would like to call item.cleanup() from here, but there's no 'onUnloading'
+            // so cleanup() is called from Component.onDestruction inside item
         }
         Loader {
             // index 1
@@ -296,6 +307,38 @@ ApplicationWindow {
     PopupPalette {
         id: popup
         onAboutToHide: {
+            resetFocus()
+        }
+    }
+
+    // Unfortunately no SIGNAL if end or beginning reached from SWIP GESTURE
+    // so at the moment user gets no visual feedback
+    // TODO Bugreport
+    Popup {
+        id: popupInfo
+        x: (parent.width - width) / 2
+        y: (parent.height - height) / 2
+        height: 160
+        ColumnLayout {
+            spacing: 20
+            LabelDisplay1 {
+                topPadding: 20
+                leftPadding: 8
+                rightPadding: 8
+                text: qsTr("No more Pages")
+            }
+            ButtonFlat {
+                text: navPane.currentIndex == 0? qsTr("First page reached") : qsTr("Last page reached")
+                textColor: accentColor
+                onClicked: {
+                    popupInfo.close()
+                }
+            }
+        }
+        onAboutToHide: {
+            if(navPane.currentIndex == 0) {
+                navPane.firstPageInfoRead = true
+            }
             resetFocus()
         }
     }
