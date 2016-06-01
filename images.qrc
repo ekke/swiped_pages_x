@@ -136,5 +136,37 @@
         <file>images/white/x48/home@2x.png</file>
         <file>images/white/x48/home@3x.png</file>
         <file>images/white/x48/home@4x.png</file>
+        <file>images/black/done.png</file>
+        <file>images/black/done@2x.png</file>
+        <file>images/black/done@3x.png</file>
+        <file>images/black/done@4x.png</file>
+        <file>images/black/x18/done.png</file>
+        <file>images/black/x18/done@2x.png</file>
+        <file>images/black/x18/done@3x.png</file>
+        <file>images/black/x18/done@4x.png</file>
+        <file>images/black/x36/done.png</file>
+        <file>images/black/x36/done@2x.png</file>
+        <file>images/black/x36/done@3x.png</file>
+        <file>images/black/x36/done@4x.png</file>
+        <file>images/black/x48/done.png</file>
+        <file>images/black/x48/done@2x.png</file>
+        <file>images/black/x48/done@3x.png</file>
+        <file>images/black/x48/done@4x.png</file>
+        <file>images/white/done.png</file>
+        <file>images/white/done@2x.png</file>
+        <file>images/white/done@3x.png</file>
+        <file>images/white/done@4x.png</file>
+        <file>images/white/x18/done.png</file>
+        <file>images/white/x18/done@2x.png</file>
+        <file>images/white/x18/done@3x.png</file>
+        <file>images/white/x18/done@4x.png</file>
+        <file>images/white/x36/done.png</file>
+        <file>images/white/x36/done@2x.png</file>
+        <file>images/white/x36/done@3x.png</file>
+        <file>images/white/x36/done@4x.png</file>
+        <file>images/white/x48/done.png</file>
+        <file>images/white/x48/done@2x.png</file>
+        <file>images/white/x48/done@3x.png</file>
+        <file>images/white/x48/done@4x.png</file>
     </qresource>
 </RCC>
