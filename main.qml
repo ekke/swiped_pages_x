@@ -315,36 +315,21 @@ ApplicationWindow {
         }
     }
 
-    // Unfortunately no SIGNAL if end or beginning reached from SWIP GESTURE
+    // Unfortunately no SIGNAL if end or beginning reached from SWIPE GESTURE
     // so at the moment user gets no visual feedback
     // TODO Bugreport
-    Popup {
+    PopupInfo {
         id: popupInfo
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        height: 160
-        ColumnLayout {
-            spacing: 20
-            LabelDisplay1 {
-                topPadding: 20
-                leftPadding: 8
-                rightPadding: 8
-                text: qsTr("No more Pages")
-            }
-            ButtonFlat {
-                text: navPane.currentIndex == 0? qsTr("First page reached") : qsTr("Last page reached")
-                textColor: accentColor
-                onClicked: {
-                    popupInfo.close()
-                }
-            }
-        }
+        text: qsTr("No more Pages")
+        buttonText: navPane.currentIndex == 0? qsTr("First page reached") : qsTr("Last page reached")
         onAboutToHide: {
+            popupInfo.stopTimer()
             if(navPane.currentIndex == 0) {
                 navPane.firstPageInfoRead = true
             }
             resetFocus()
         }
-    }
+    } // popupInfo
+
 
 } // app window

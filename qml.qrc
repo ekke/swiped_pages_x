@@ -30,5 +30,6 @@
         <file>common/ButtonFlat.qml</file>
         <file>common/StackTextTitle.qml</file>
         <file>common/SwipeTextTitle.qml</file>
+        <file>common/PopupInfo.qml</file>
     </qresource>
 </RCC>
