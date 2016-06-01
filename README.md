@@ -17,15 +17,17 @@ please read these blogs and explroe corresponding apps before going on
 
 The topics of this third sample app:
 
-* more Qt Quick Controls 2 stuff: Buttons (Raised Buttons and Flat Buttons)
-* Navigation with StackView: pop(), push(), find()
-* go up and down page-by-page or jump back/force
+* Navigation with SwipeView: next / previous page
+* go forward and back page-by-page or jump back/force
 * Navigation with Android bottom Back-key
 * navigation with Android Back Button in Titlebar (ToolBar)
-* Navigation with Buttons and Floating Action Button
-* Navigation with Shortcut (physical keyboard attached)
-* Management of StackView to implement business-logic - simplified with init() and cleanup() functions
+* Navigation with Buttons
+* enable / disable Buttons, use SIGNALS / SLOTS (QML)
+* Navigation with Shortcut (physical keyboard attached, per ex. BlackBerry PRIV)
+* Management of SwipeView to implement business-logic - simplified with init() and cleanup() functions, also each page must be valid before going to the next page - simplified by tapping on Floating Action Button
 * Dark Theme and selecting primary and accent color from options menu in ToolBar
+* Popup to show info to user if first/last page reached
+* Be dynamic, lazy and performant: using Loaders for Wizard - pages, only current +/- 1 page are preloaded
 
 Strings are marked as translatable, but not translated yet. See the first app to learn about i18n.
 
