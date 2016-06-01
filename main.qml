@@ -89,7 +89,9 @@ ApplicationWindow {
 
     // primaryDarkColor is used because FAB can overlap Raised Buttons colored in primaryColor
     FloatingActionButton {
-        property string imageName: "/directions.png"
+        id: fab
+        visible: !navPane.pageValidation[navPane.currentIndex]
+        property string imageName: "/done.png"
         z: 1
         anchors.margins: 16
         anchors.right: parent.right
@@ -101,6 +103,7 @@ ApplicationWindow {
             // only if valid next page can be swiped to
             navPane.pageValidation[navPane.currentIndex] = 1
             navPane.validationChanged()
+            visible = false
         }
     } // FAB
 
@@ -115,6 +118,7 @@ ApplicationWindow {
         currentIndex: 0
         // currentIndex is the NEXT index swiped to
         onCurrentIndexChanged: {
+            fab.visible = !pageValidation[currentIndex]
             if (lastIndex == currentIndex) {
                 return
             }
