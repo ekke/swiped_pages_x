@@ -8,25 +8,35 @@ Popup {
     property alias buttonText: okButton.text
     x: (parent.width - width) / 2
     y: (parent.height - height) / 2
-    height: 160
+    implicitHeight: 180
+    implicitWidth: parent.width * .6
     ColumnLayout {
-        spacing: 20
-        LabelDisplay1 {
-            id: popupLabel
-            topPadding: 20
-            leftPadding: 8
-            rightPadding: 8
-            text: ""
-        }
-        ButtonFlat {
-            id: okButton
-            text: ""
-            textColor: accentColor
-            onClicked: {
-                popupInfo.close()
-            }
-        }
-    }
+        anchors.right: parent.right
+        anchors.left: parent.left
+        spacing: 10
+        RowLayout {
+            LabelSubheading {
+                id: popupLabel
+                topPadding: 20
+                leftPadding: 8
+                rightPadding: 8
+                text: ""
+                color: popupTextColor
+                horizontalAlignment: Text.AlignHCenter
+            } // popupLabel
+        } // row label
+        RowLayout {
+            ButtonFlat {
+                id: okButton
+                text: ""
+                textColor: accentColor
+                onClicked: {
+                    popupInfo.close()
+                }
+            } // okButton
+        } // row button
+    } // col layout
+
     onAboutToHide: {
         stopTimer()
     }

@@ -47,6 +47,7 @@ ApplicationWindow {
     property string iconFolder: themePalette[7]
     property int isDarkTheme: themePalette[8]
     property color flatButtonTextColor: themePalette[9]
+    property color popupTextColor: themePalette[10]
     // Material.dropShadowColor  OK for Light, but too dark for dark theme
     property color dropShadow: isDarkTheme? "#E4E4E4" : Material.dropShadowColor
     onIsDarkThemeChanged: {
