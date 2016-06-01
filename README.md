@@ -1,3 +1,5 @@
+# WORK IN PROGRESS - wait for tweet @ekkescorner or blog http://bit.ly/qt-swiped-pages-x before clone
+
 # swiped_pages_x
 Sample APP - Qt 5.7+ - Android iOS
 
@@ -26,6 +28,7 @@ The topics of this third sample app:
 * Dark Theme and selecting primary and accent color from options menu in ToolBar
 * Popup to show info to user if first/last page reached
 * Be dynamic, lazy and performant: using Loaders for Wizard - pages, only current +/- 1 page are preloaded
+* Use of a QML Timer to auto-close Popup
 
 Strings are marked as translatable, but not translated yet. See the first app to learn about i18n.
 
