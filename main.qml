@@ -84,7 +84,7 @@ ApplicationWindow {
 
     header: SwipeTextTitle {
         id: titleBar
-        text: navPane.currentItem? navPane.currentItem.title : qsTr("A simple Stacked - Pages APP")
+        text: navPane.currentItem? navPane.currentItem.title : qsTr("A simple Swiped - Pages APP")
     }
 
     // primaryDarkColor is used because FAB can overlap Raised Buttons colored in primaryColor
