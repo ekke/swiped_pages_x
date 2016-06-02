@@ -319,13 +319,13 @@ ApplicationWindow {
     }
 
     function firstPageReached() {
-        popupInfo.text = qsTr("No more Pages\nFirst page reached")
+        popupInfo.text = qsTr("No more Pages\nFirst Page reached")
         popupInfo.buttonText = qsTr("OK")
         popupInfo.open()
         navPane.firstPageInfoRead = true
     }
     function lastPageReached() {
-        popupInfo.text = qsTr("No more Pages\nLast page reached")
+        popupInfo.text = qsTr("No more Pages\nLast Page reached")
         popupInfo.buttonText = qsTr("OK")
         popupInfo.open()
     }
