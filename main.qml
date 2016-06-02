@@ -319,19 +319,19 @@ ApplicationWindow {
     }
 
     function firstPageReached() {
-        popupInfo.text = qsTr("No more Pages")
-        popupInfo.buttonText = qsTr("First page reached")
+        popupInfo.text = qsTr("No more Pages\nFirst page reached")
+        popupInfo.buttonText = qsTr("OK")
         popupInfo.open()
         navPane.firstPageInfoRead = true
     }
     function lastPageReached() {
-        popupInfo.text = qsTr("No more Pages")
-        popupInfo.buttonText = qsTr("Last page reached")
+        popupInfo.text = qsTr("No more Pages\nLast page reached")
+        popupInfo.buttonText = qsTr("OK")
         popupInfo.open()
     }
     function pageNotValid(pageNumber) {
         popupInfo.text = qsTr("Page %1 not valid.\nPlease tap 'Done' Button","").arg(pageNumber)
-        popupInfo.buttonText = qsTr("Thanks letting me know")
+        popupInfo.buttonText = qsTr("So Long, and Thx For All The Fish")
         popupInfo.open()
     }
 
