@@ -130,7 +130,10 @@ ApplicationWindow {
             }
             // swiping forward
             for (var i = lastIndex; i <= currentIndex; i++) {
-                if(!navPane.pageValidation[i]) {
+                if(!pageValidation[i]) {
+                    if(i < currentIndex) {
+                        pageNotValid(i+1)
+                    }
                     lastIndex = i
                     currentIndex = i
                     return
@@ -150,8 +153,7 @@ ApplicationWindow {
             // user gets Popupo Info
             // hitting again BACK will close the app
             if(!firstPageInfoRead) {
-                popupInfo.open()
-                firstPageInfoRead = true
+                firstPageReached()
             }
             // We don't have to manually cleanup loaded Page 1+2
             // While shutting down the app loaded Pages will be deconstructed
@@ -215,7 +217,7 @@ ApplicationWindow {
 
         function onePageBack() {
             if(navPane.currentIndex == 0) {
-                popupInfo.open()
+                firstPageReached()
                 return
             }
             currentIndex = currentIndex - 1
@@ -223,7 +225,7 @@ ApplicationWindow {
 
         function onePageForward() {
             if(navPane.currentIndex == 4) {
-                popupInfo.open()
+                lastPageReached()
                 return
             }
             currentIndex = currentIndex + 1
@@ -316,18 +318,30 @@ ApplicationWindow {
         }
     }
 
+    function firstPageReached() {
+        popupInfo.text = qsTr("No more Pages")
+        popupInfo.buttonText = qsTr("First page reached")
+        popupInfo.open()
+        navPane.firstPageInfoRead = true
+    }
+    function lastPageReached() {
+        popupInfo.text = qsTr("No more Pages")
+        popupInfo.buttonText = qsTr("Last page reached")
+        popupInfo.open()
+    }
+    function pageNotValid(pageNumber) {
+        popupInfo.text = qsTr("Page %1 not valid.\nPlease tap 'Done' Button","").arg(pageNumber)
+        popupInfo.buttonText = qsTr("Thanks letting me know")
+        popupInfo.open()
+    }
+
     // Unfortunately no SIGNAL if end or beginning reached from SWIPE GESTURE
     // so at the moment user gets no visual feedback
     // TODO Bugreport
     PopupInfo {
         id: popupInfo
-        text: qsTr("No more Pages")
-        buttonText: navPane.currentIndex == 0? qsTr("First page reached") : qsTr("Last page reached")
         onAboutToHide: {
             popupInfo.stopTimer()
-            if(navPane.currentIndex == 0) {
-                navPane.firstPageInfoRead = true
-            }
             resetFocus()
         }
     } // popupInfo

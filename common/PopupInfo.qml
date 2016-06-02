@@ -9,7 +9,7 @@ Popup {
     x: (parent.width - width) / 2
     y: (parent.height - height) / 2
     implicitHeight: 180
-    implicitWidth: parent.width * .6
+    implicitWidth: parent.width * .7
     ColumnLayout {
         anchors.right: parent.right
         anchors.left: parent.left

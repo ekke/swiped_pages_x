@@ -33,7 +33,7 @@ Flickable {
                     leftPadding: 10
                     rightPadding: 10
                     wrapMode: Text.WordWrap
-                    text: qsTr("This is the first page of a SwipeView. From here navigate forward to the next page:\n* Swipe from right to left\n* Tap on 'Page 2' Button\n\nNavigating forward is only allowed, if the Page is valid. To simulate validation tap on the 'FloatingActionButton' (FAB) placed at bottom-right\n\nFrom 'Option Menu' (three dots) placed top right in ToolBar you can switch Theme and change primary / accent colors\n\nBluetooth keyboard attached or on BlackBerry PRIV ?\n* Type '1', '2', '3', '4', '5' to go to the specific page\n* 'Space' for the next page\n* 'Shift Space' to go one page back\n")
+                    text: qsTr("This is the first page of a SwipeView. From here navigate forward to the next page:\n* Swipe from right to left\n* Tap on 'Page 2' Button\n\nNavigating forward is only allowed, if the Page is valid. To simulate validation tap on the 'Done' Button placed at bottom-right\n\nFrom 'Option Menu' (three dots) placed top right in ToolBar you can switch Theme and change primary / accent colors\n\nBluetooth keyboard attached or on BlackBerry PRIV ?\n* Type '1', '2', '3', '4', '5' to go to the specific page\n* 'Space' for the next page\n* 'Shift Space' to go one page back\n")
                 }
             }
             HorizontalDivider {}
