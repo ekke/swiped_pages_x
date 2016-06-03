@@ -4,37 +4,29 @@
 <context>
     <name>PageFive</name>
     <message>
-        <location filename="../pages/PageFive.qml" line="15"/>
-        <source>Page 5 of 5 in Stack</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../pages/PageFive.qml" line="24"/>
         <source>Hello Five</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageFive.qml" line="34"/>
-        <source>This is page 5 of 5 - the top most page
-
-Navigate back to previous page:
-* Button labeled &apos;POP&apos;
-* Back Button placed top-left in Titlebar
-* on Android: System Back Button at bottom left
-
-Navigate back to the root using the FAB
-
-Jump back to &apos;PageThree&apos; using Button &apos;BACK TO 3&apos;
-&apos;PageFour&apos; will automatically pop()
-
-Button &apos;FIND 3&apos; tries to find &apos;PageThree&apos; by property &apos;name&apos;.
-Find will only work if page is instantiated. More details in blog entry.
-</source>
+        <location filename="../pages/PageFive.qml" line="15"/>
+        <source>Wizard: Page 5 of 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageFive.qml" line="55"/>
-        <source>PageThree not found in StackView</source>
+        <location filename="../pages/PageFive.qml" line="34"/>
+        <source>This is page 5 of 5 - the last page of this 5-Pages-Wizard
+
+Navigate back to previous page:
+* Swipe from left-to-right
+* Button labeled &apos;BACK&apos;
+* Back Button placed top-left in Titlebar
+* on Android: System Back Button at bottom left
+
+Navigate back to the first page using Button &apos;FIRST PAGE&apos;
+
+Jump back to &apos;PageThree&apos; using Button &apos;PAGE 3&apos; or swipe left-to-right
+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -56,13 +48,13 @@ Find will only work if page is instantiated. More details in blog entry.
 <context>
     <name>PageFour</name>
     <message>
-        <location filename="../pages/PageFour.qml" line="15"/>
-        <source>Page 4 of 5 in Stack</source>
+        <location filename="../pages/PageFour.qml" line="24"/>
+        <source>Hello Four</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageFour.qml" line="24"/>
-        <source>Hello Four</source>
+        <location filename="../pages/PageFour.qml" line="15"/>
+        <source>Wizard: Page 4 of 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -70,31 +62,28 @@ Find will only work if page is instantiated. More details in blog entry.
         <source>This is page 4 of 5
 
 Navigate back to previous page:
-* Button labeled &apos;POP&apos;
+* Swipe from left-to-right
+* Button labeled &apos;BACK&apos;
 * Back Button placed top-left in Titlebar
 * on Android: System Back Button at bottom left
 
-Navigate forward to the next page &apos;PageFive&apos; using the FAB or Button &apos;PUSH 5&apos;
-
-Below the buttons a text is displayed:
-* &apos;Message from Page Three&apos; or
-* &apos;n/a&apos; if PageThree is not loaded because we &apos;jumped&apos; from 2 to 5
+Navigate forward to the next page &apos;PageFive&apos; using Button &apos;LAST PAGE&apos; or swipe right-to-left
 
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageFour.qml" line="72"/>
+        <location filename="../pages/PageFour.qml" line="79"/>
         <source>Message from Page Four</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageFour.qml" line="76"/>
+        <location filename="../pages/PageFour.qml" line="83"/>
         <source>Init done from Four</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageFour.qml" line="80"/>
+        <location filename="../pages/PageFour.qml" line="87"/>
         <source>Cleanup done from Four</source>
         <translation type="unfinished"></translation>
     </message>
@@ -102,39 +91,44 @@ Below the buttons a text is displayed:
 <context>
     <name>PageOne</name>
     <message>
-        <location filename="../pages/PageOne.qml" line="15"/>
-        <source>Root Page in Stack of max 5</source>
+        <location filename="../pages/PageOne.qml" line="16"/>
+        <source>Wizard: Page 1 of 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageOne.qml" line="24"/>
-        <source>Hello Stack</source>
+        <location filename="../pages/PageOne.qml" line="26"/>
+        <source>Hello Wizard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageOne.qml" line="34"/>
-        <source>This is the root page of a StackView - the &apos;initial Item&apos;
+        <location filename="../pages/PageOne.qml" line="36"/>
+        <source>This is the first page of a SwipeView. From here navigate forward to the next page:
+* Swipe from right to left
+* Tap on &apos;Page 2&apos; Button
 
-From here you can navigate forward to the next page using the &apos;FloatingActionButton&apos; (FAB) placed at bottom-right or using the Raised Button named &apos;PUSH 2&apos;
+Navigating forward is only allowed, if the Page is valid. To simulate validation tap on the &apos;Done&apos; Button placed at bottom-right
 
-This StackView can stack a maximum of 5 pages including this root page.
+From &apos;Option Menu&apos; (three dots) placed top right in ToolBar you can switch Theme and change primary / accent colors
 
-From &apos;Option Menu&apos;(three dots) placed top right in ToolBar you can switch Theme and change primary / accent
+Bluetooth keyboard attached or BlackBerry PRIV?
+* Type &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, &apos;5&apos; to go to the specific page
+* &apos;Space&apos; for the next page
+* &apos;Shift Space&apos; to go one page back
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageOne.qml" line="63"/>
+        <location filename="../pages/PageOne.qml" line="79"/>
         <source>Message from Page One</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageOne.qml" line="67"/>
+        <location filename="../pages/PageOne.qml" line="83"/>
         <source>Init done from One</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageOne.qml" line="71"/>
+        <location filename="../pages/PageOne.qml" line="87"/>
         <source>Cleanup done from One</source>
         <translation type="unfinished"></translation>
     </message>
@@ -142,42 +136,44 @@ From &apos;Option Menu&apos;(three dots) placed top right in ToolBar you can swi
 <context>
     <name>PageThree</name>
     <message>
-        <location filename="../pages/PageThree.qml" line="15"/>
-        <source>Page 3 of 5 in Stack</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../pages/PageThree.qml" line="24"/>
         <source>Hello Three</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../pages/PageThree.qml" line="15"/>
+        <source>Wizard: Page 3 of 5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../pages/PageThree.qml" line="34"/>
         <source>This is page 3 of 5
+
 Here we&apos;re using another kind of Material Buttons: Flat Buttons
 
 Navigate back to previous page:
-* Button labeled &apos;POP&apos;
+* Swipe from left-to-right
+* Button labeled &apos;BACK&apos;
 * Back Button placed top-left in Titlebar
 * on Android: System Back Button at bottom left
 
-Navigate forward to the next page &apos;PageFour&apos; using the FAB or Button &apos;PUSH 4&apos;
+Navigate forward to the next page &apos;PageFour&apos; using Button &apos;PAGE 4&apos; or swipe right-to-left
 
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageThree.qml" line="65"/>
+        <location filename="../pages/PageThree.qml" line="79"/>
         <source>Message from Page Three</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageThree.qml" line="69"/>
+        <location filename="../pages/PageThree.qml" line="83"/>
         <source>Init done from Three</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageThree.qml" line="73"/>
+        <location filename="../pages/PageThree.qml" line="87"/>
         <source>Cleanup done from Three</source>
         <translation type="unfinished"></translation>
     </message>
@@ -185,13 +181,13 @@ Navigate forward to the next page &apos;PageFour&apos; using the FAB or Button &
 <context>
     <name>PageTwo</name>
     <message>
-        <location filename="../pages/PageTwo.qml" line="15"/>
-        <source>Page 2 of 5 in Stack</source>
+        <location filename="../pages/PageTwo.qml" line="24"/>
+        <source>Hello Two</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageTwo.qml" line="24"/>
-        <source>Hello Two</source>
+        <location filename="../pages/PageTwo.qml" line="15"/>
+        <source>Wizard: Page 2 of 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -199,28 +195,29 @@ Navigate forward to the next page &apos;PageFour&apos; using the FAB or Button &
         <source>This is page 2 of 5
 
 Navigate back to previous page:
-* Button labeled &apos;POP&apos;
+* Swipe from left-to-right
+* Button labeled &apos;BACK&apos;
 * Back Button placed top-left in Titlebar
 * on Android: System Back Button at bottom left
 
-Navigate forward to the next page &apos;PageThree&apos; using the FAB or Button &apos;PUSH 3&apos;
+Navigate forward to the next page &apos;PageThree&apos; tap on Button &apos;PAGE 3&apos; or swipe from right-to-left.
 
-Button labeled GOTO 5 jumps up to the top most page: PageFive. In this case PageThree and PageFour are NOT loaded - only Components are placed as placeholders in stack
+Button labeled &apos;LAST PAGE&apos; jumps forward to Page 5 - but only if Pages 2, 3 and 4 are valid. 
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageTwo.qml" line="66"/>
+        <location filename="../pages/PageTwo.qml" line="83"/>
         <source>Message from Page Two</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageTwo.qml" line="70"/>
+        <location filename="../pages/PageTwo.qml" line="87"/>
         <source>Init done from Two</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../pages/PageTwo.qml" line="74"/>
+        <location filename="../pages/PageTwo.qml" line="91"/>
         <source>Cleanup done from Two</source>
         <translation type="unfinished"></translation>
     </message>
@@ -370,10 +367,62 @@ Button labeled GOTO 5 jumps up to the top most page: PageFive. In this case Page
     </message>
 </context>
 <context>
+    <name>SwipeTextTitle</name>
+    <message>
+        <location filename="../common/SwipeTextTitle.qml" line="52"/>
+        <source>Light Theme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../common/SwipeTextTitle.qml" line="52"/>
+        <source>Dark Theme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../common/SwipeTextTitle.qml" line="58"/>
+        <source>Select Primary Color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../common/SwipeTextTitle.qml" line="65"/>
+        <source>Select Accent Color</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>main</name>
     <message>
-        <location filename="../main.qml" line="87"/>
-        <source>A simple Stacked - Pages APP</source>
+        <location filename="../main.qml" line="88"/>
+        <source>A simple Swiped - Pages APP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="322"/>
+        <source>No more Pages
+First Page reached</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="323"/>
+        <location filename="../main.qml" line="329"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="328"/>
+        <source>No more Pages
+Last Page reached</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="333"/>
+        <source>Page %1 not valid.
+Please tap &apos;Done&apos; Button</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="334"/>
+        <source>So Long, and Thx For All The Fish</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
