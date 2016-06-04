@@ -8,7 +8,7 @@ Popup {
     property alias buttonText: okButton.text
     x: (parent.width - width) / 2
     y: (parent.height - height) / 2
-    implicitHeight: 180
+    implicitHeight: 160
     implicitWidth: parent.width * .9
     ColumnLayout {
         anchors.right: parent.right
