@@ -105,6 +105,9 @@ ApplicationWindow {
             navPane.pageValidation[navPane.currentIndex] = 1
             navPane.validationChanged()
             visible = false
+            // Attention: since 5.7 RC you MUST RESET FOCUS
+            // otherwise Shortcuts not working well
+            resetFocus()
         }
     } // FAB
 
