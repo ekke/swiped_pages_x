@@ -136,12 +136,13 @@ ApplicationWindow {
                 if(!pageValidation[i]) {
                     if(i < currentIndex) {
                         pageNotValid(i+1)
+                        lastIndex = i
+                        currentIndex = i
+                        return
                     }
-                    lastIndex = i
-                    currentIndex = i
-                    return
                 }
-            }
+            } // for
+            lastIndex = currentIndex
         }
 
         // support of BACK key
@@ -167,8 +168,8 @@ ApplicationWindow {
         // * running on BlackBerry PRIV (Slider with hardware keyboard)
         // * or attached Bluetooth Keyboard
         // Jump to Page 1 (w), 2 (e), 3 (r), 4 (s), 5(d)
-        // Goto next page: 'Space'
-        // Goto previous page: 'Shift'+'Space'
+        // Goto next page: 'n'
+        // Goto previous page: 'p'
         Shortcut {
             sequence: "w"
             onActivated: navPane.goToPage(0)
@@ -209,29 +210,38 @@ ApplicationWindow {
             sequence: "Alt+d"
             onActivated: navPane.goToPage(4)
         }
+        // TODO Bugreport 5.7 RC
+        // Shortcut Space / Shift Space
+        // sometimes not working correct:
+        // sometimes Space / Shift Space are hitting a Button from Page
+        // this then causes two actions to be mixed: a) Button - clicked, b) Shortcut
+        // n == NEXT
         Shortcut {
-            sequence: " "
+            sequence: "n" //" "
             onActivated: navPane.onePageForward()
         }
+        // p == PREVIOUS
         Shortcut {
-            sequence: "Shift+ "
+            sequence: "p" //"Shift+ "
             onActivated: navPane.onePageBack()
         }
 
         function onePageBack() {
+            console.log("one BACK current: " + navPane.currentIndex + " last: "+navPane.lastIndex)
             if(navPane.currentIndex == 0) {
                 firstPageReached()
                 return
             }
-            currentIndex = currentIndex - 1
+            navPane.goToPage(currentIndex - 1)
         } // onePageBack
 
         function onePageForward() {
+            console.log("one FORWARD current: " + navPane.currentIndex + " last: "+navPane.lastIndex)
             if(navPane.currentIndex == 4) {
                 lastPageReached()
                 return
             }
-            currentIndex = currentIndex + 1
+            navPane.goToPage(currentIndex + 1)
         }
 
         function goToPage(pageIndex) {
