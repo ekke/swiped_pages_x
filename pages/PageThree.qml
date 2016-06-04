@@ -42,7 +42,7 @@ Flickable {
                     text: "Back"
                     textColor: accentColor
                     onClicked: {
-                        navPane.onePageBack()
+                        navPane.goToPage(1)
                     }
                 }
                 ButtonFlat {
@@ -76,15 +76,15 @@ Flickable {
     }
 
     function whoAmI() {
-        return qsTr("Message from Page Three")
+        return qsTr("Message from Page Three [2]")
     }
     // called immediately after Loader.loaded
     function init() {
-        console.log(qsTr("Init done from Three"))
+        console.log(qsTr("Init done from Three [2]"))
     }
     // called from Component.destruction
     function cleanup() {
-        console.log(qsTr("Cleanup done from Three"))
+        console.log(qsTr("Cleanup done from Three [2]"))
     }
 } // flickable
 

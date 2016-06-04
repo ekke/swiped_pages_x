@@ -76,14 +76,14 @@ Flickable {
     }
 
     function whoAmI() {
-        return qsTr("Message from Page One")
+        return qsTr("Message from Page One [0]")
     }
     // called immediately after Loader.loaded
     function init() {
-        console.log(qsTr("Init done from One"))
+        console.log(qsTr("Init done from One [0]"))
     }
     // called from Component.destruction
     function cleanup() {
-        console.log(qsTr("Cleanup done from One"))
+        console.log(qsTr("Cleanup done from One [0]"))
     }
 } // flickable
