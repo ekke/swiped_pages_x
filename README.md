@@ -1,5 +1,3 @@
-# WORK IN PROGRESS - wait for tweet @ekkescorner or blog http://bit.ly/qt-swiped-pages-x before clone
-
 # swiped_pages_x
 Sample APP - Qt 5.7+ - Android iOS
 
