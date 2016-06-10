@@ -31,7 +31,7 @@ Popup {
                 text: ""
                 textColor: accentColor
                 onClicked: {
-                    popupInfo.close()
+                    popup.close()
                 }
             } // okButton
         } // row button
