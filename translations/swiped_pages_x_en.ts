@@ -31,17 +31,17 @@ Jump back to &apos;PageThree&apos; using Button &apos;PAGE 3&apos; or swipe left
     </message>
     <message>
         <location filename="../pages/PageFive.qml" line="78"/>
-        <source>Message from Page Five</source>
+        <source>Message from Page Five [4]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/PageFive.qml" line="82"/>
-        <source>Init done from Five</source>
+        <source>Init done from Five [4]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/PageFive.qml" line="86"/>
-        <source>Cleanup done from Five</source>
+        <source>Cleanup done from Five [4]</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -74,17 +74,17 @@ Navigate forward to the next page &apos;PageFive&apos; using Button &apos;LAST P
     </message>
     <message>
         <location filename="../pages/PageFour.qml" line="79"/>
-        <source>Message from Page Four</source>
+        <source>Message from Page Four [3]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/PageFour.qml" line="83"/>
-        <source>Init done from Four</source>
+        <source>Init done from Four [3]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/PageFour.qml" line="87"/>
-        <source>Cleanup done from Four</source>
+        <source>Cleanup done from Four [3]</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -119,17 +119,17 @@ Bluetooth keyboard attached or BlackBerry PRIV?
     </message>
     <message>
         <location filename="../pages/PageOne.qml" line="79"/>
-        <source>Message from Page One</source>
+        <source>Message from Page One [0]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/PageOne.qml" line="83"/>
-        <source>Init done from One</source>
+        <source>Init done from One [0]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/PageOne.qml" line="87"/>
-        <source>Cleanup done from One</source>
+        <source>Cleanup done from One [0]</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -164,17 +164,17 @@ Navigate forward to the next page &apos;PageFour&apos; using Button &apos;PAGE 4
     </message>
     <message>
         <location filename="../pages/PageThree.qml" line="79"/>
-        <source>Message from Page Three</source>
+        <source>Message from Page Three [2]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/PageThree.qml" line="83"/>
-        <source>Init done from Three</source>
+        <source>Init done from Three [2]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/PageThree.qml" line="87"/>
-        <source>Cleanup done from Three</source>
+        <source>Cleanup done from Three [2]</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -208,114 +208,114 @@ Button labeled &apos;LAST PAGE&apos; jumps forward to Page 5 - but only if Pages
     </message>
     <message>
         <location filename="../pages/PageTwo.qml" line="83"/>
-        <source>Message from Page Two</source>
+        <source>Message from Page Two [1]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/PageTwo.qml" line="87"/>
-        <source>Init done from Two</source>
+        <source>Init done from Two [1]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/PageTwo.qml" line="91"/>
-        <source>Cleanup done from Two</source>
+        <source>Cleanup done from Two [1]</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PopupPalette</name>
     <message>
-        <location filename="../common/PopupPalette.qml" line="71"/>
+        <location filename="../common/PopupPalette.qml" line="74"/>
         <source>Material Red</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="72"/>
+        <location filename="../common/PopupPalette.qml" line="75"/>
         <source>Material Pink</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="73"/>
+        <location filename="../common/PopupPalette.qml" line="76"/>
         <source>Material Purple</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="74"/>
+        <location filename="../common/PopupPalette.qml" line="77"/>
         <source>Material DeepPurple</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="75"/>
+        <location filename="../common/PopupPalette.qml" line="78"/>
         <source>Material Indigo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="76"/>
+        <location filename="../common/PopupPalette.qml" line="79"/>
         <source>Material Blue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="77"/>
+        <location filename="../common/PopupPalette.qml" line="80"/>
         <source>Material LightBlue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="78"/>
+        <location filename="../common/PopupPalette.qml" line="81"/>
         <source>Material Cyan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="79"/>
+        <location filename="../common/PopupPalette.qml" line="82"/>
         <source>Material Teal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="80"/>
+        <location filename="../common/PopupPalette.qml" line="83"/>
         <source>Material Green</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="81"/>
+        <location filename="../common/PopupPalette.qml" line="84"/>
         <source>Material LightGreen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="82"/>
+        <location filename="../common/PopupPalette.qml" line="85"/>
         <source>Material Lime</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="83"/>
+        <location filename="../common/PopupPalette.qml" line="86"/>
         <source>Material Yellow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="84"/>
+        <location filename="../common/PopupPalette.qml" line="87"/>
         <source>Material Amber</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="85"/>
+        <location filename="../common/PopupPalette.qml" line="88"/>
         <source>Material Orange</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="86"/>
+        <location filename="../common/PopupPalette.qml" line="89"/>
         <source>Material DeepOrange</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="87"/>
+        <location filename="../common/PopupPalette.qml" line="90"/>
         <source>Material Brown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="88"/>
+        <location filename="../common/PopupPalette.qml" line="91"/>
         <source>Material Grey</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../common/PopupPalette.qml" line="89"/>
+        <location filename="../common/PopupPalette.qml" line="92"/>
         <source>Material BlueGrey</source>
         <translation type="unfinished"></translation>
     </message>
@@ -397,31 +397,31 @@ Button labeled &apos;LAST PAGE&apos; jumps forward to Page 5 - but only if Pages
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="322"/>
+        <location filename="../main.qml" line="332"/>
         <source>No more Pages
 First Page reached</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="323"/>
-        <location filename="../main.qml" line="329"/>
+        <location filename="../main.qml" line="333"/>
+        <location filename="../main.qml" line="339"/>
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="328"/>
+        <location filename="../main.qml" line="338"/>
         <source>No more Pages
 Last Page reached</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="333"/>
+        <location filename="../main.qml" line="343"/>
         <source>Page %1 not valid.
 Please tap &apos;Done&apos; Button</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="334"/>
+        <location filename="../main.qml" line="344"/>
         <source>So Long, and Thx For All The Fish</source>
         <translation type="unfinished"></translation>
     </message>
